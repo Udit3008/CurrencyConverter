@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="375dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:background="#ec7f9c"
+        android:gravity="center"
+        android:text="Rupee value of your US Dollar ?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColorLink="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="312dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="65dp"
+        android:background="#d643ebd7"
+        android:ems="10"
+        android:hint="Enter the Amount"
+        android:inputType="textPersonName"
+        android:textColorLink="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="275dp"
+        android:background="#7d8ff5"
+        android:onClick="convertorClick"
+        android:text="Convertor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+</android.support.constraint.ConstraintLayout>
